@@ -71,7 +71,7 @@ vercel
 
 ## 📄 AI Usage Report
 
-See AI_USAGE.md for a detailed explanation of how AI tools were used in development.
+See [AI Usage Report](./AI_USAGE.md) for a detailed explanation of how AI tools were used in development.
 
 ## 👤 Author
 Chirag Singh
