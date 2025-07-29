@@ -11,7 +11,7 @@ interface BlogCardProps {
   link: string
 }
 
-export default function BlogCard({ title, excerpt, icon, link }: BlogCardProps) {
+export default function BlogCard({ title, excerpt, icon}: BlogCardProps) {
   return (
     <motion.div
         initial={{ opacity: 0, y: 40 }}
