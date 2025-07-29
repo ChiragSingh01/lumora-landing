@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import Link from 'next/link'
 import ThemeToggle from '@/hooks/ThemeToggle'
+import Image from 'next/image'
 
 const navLinks = [
   { label: 'Home', href: '#hero' },
@@ -30,7 +31,7 @@ export default function Navbar() {
         </div>
 
         <div className='rounded-full overflow-hidden w-10 h-10 mr-4 dark:border-2 dark:border-white'>
-          <img src="/logo.png" alt="Lumora Logo" />
+          <Image src="/logo.png" alt="Lumora Logo" width={40} height={40} className="rounded-full" />
         </div>
 
         {/* Brand */}

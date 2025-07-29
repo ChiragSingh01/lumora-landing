@@ -7,21 +7,28 @@ export default function ThemeToggle() {
   const [mounted, setMounted] = useState(false)
   const [darkMode, setDarkMode] = useState(false)
 
-  // Ensure component only renders after client mount
   useEffect(() => {
     setMounted(true)
     const storedTheme = localStorage.getItem('theme')
-    setDarkMode(storedTheme === 'dark')
+    if (storedTheme) {
+      setDarkMode(storedTheme === 'dark')
+      document.documentElement.classList[storedTheme === 'dark' ? 'add' : 'remove']('dark')
+    } else {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+      setDarkMode(prefersDark)
+      document.documentElement.classList.toggle('dark', prefersDark)
+      localStorage.setItem('theme', prefersDark ? 'dark' : 'light')
+    }
   }, [])
 
   const toggleTheme = () => {
     const newTheme = darkMode ? 'light' : 'dark'
     localStorage.setItem('theme', newTheme)
-    document.documentElement.classList.toggle('dark')
+    document.documentElement.classList[newTheme === 'dark' ? 'add' : 'remove']('dark')
     setDarkMode(!darkMode)
   }
 
-  if (!mounted) return null // ⛔ prevent hydration error
+  if (!mounted) return null
 
   return (
     <button onClick={toggleTheme} className="p-2 rounded">
