@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌟 Lumora – Modern AI-Powered Landing Page
 
-## Getting Started
+Lumora is a sleek, responsive, and AI-enhanced landing page designed for tech startups, SaaS platforms, and AI products. Built using **Next.js 14**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**, this project showcases modern UI/UX principles, animation, theming, and more.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- ⚡ **Next.js 14 (App Router) + TypeScript**
+- 🎨 **Beautiful, modern design** with responsive layout
+- 🌙 **Dark/Light mode** toggle support
+- 💡 **Framer Motion animations**
+- 💬 **Testimonials Carousel**
+- 💰 **Interactive Pricing Calculator**
+- 📝 **Blog section with vertical scroll**
+- 📦 Modular, reusable components
+- 🧠 AI-assisted design and coding
+
+---
+
+## 🧰 Tech Stack
+
+- **Frontend**: React, Next.js 14, TypeScript, Tailwind CSS
+- **Animations**: Framer Motion
+- **Deployment**: Vercel / Netlify
+- **AI Tools**: ChatGPT (UI/UX, Code generation), Logo AI Generator
+
+---
+
+## 📦 Installation
 
 ```bash
+# 1. Clone the repo
+git clone https://github.com/ChiragSingh01/lumora-landing.git
+cd lumora-landing
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+---
+
+##  🛠 Project Structure
+
+``` ruby
+
+📦 lumora-landing/
+├── app/                # Next.js app routes
+│   └── page.tsx        # Home page
+├── components/         # Reusable components (Hero, Features, Pricing, etc.)
+│   └── ui/             # UI components like TestimonialCarousel, Calculator
+├── public/             # Static assets
+├── styles/             # Tailwind CSS and global styles
+├── README.md
+└── next.config.js
+
+```
+---
+## 📍 Deployment
+Deployed with Vercel (Recommended)
+
+```bash
+
+# To deploy via Vercel CLI
+npm i -g vercel
+vercel
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📄 AI Usage Report
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+See AI_USAGE.md for a detailed explanation of how AI tools were used in development.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 👤 Author
+Chirag Singh
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## 📃 License
+This project is licensed under the MIT License.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
